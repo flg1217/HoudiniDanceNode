@@ -1,0 +1,1227 @@
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY"
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename=".OPfallbacks"
+Content-Type: application/external-reference
+
+.OPfallbacks
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename=".OPdummydefs"
+Content-Type: application/external-reference
+
+.OPdummydefs
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="node_type"
+Content-Type: text/plain
+
+Sop
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.init"
+Content-Type: text/plain
+
+type = FPP::DancingNode
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position -1.15909e-06 15.6412
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+1 "output1"
+}
+inputsNamed3
+{
+0 	Spine 0 1 "input1"
+}
+inputs
+{
+0 	Spine 0 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":""
+	},
+	"nodeshape":{
+		"type":"string",
+		"value":"bulge_down"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.inp"
+Content-Type: text/plain
+
+1
+0 3.1069496306470885 7.5724196301445632 2 0 __NO_OWNER_NETWORK_BOX__ "FROMOUTPUT"
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclipextract1.init"
+Content-Type: text/plain
+
+type = kinefx::motionclipextract
+matchesdef = 1
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclipextract1.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position 0.952564 0.991199
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+1 "output1"
+}
+inputsNamed3
+{
+0 	Frames 1 1 "input1"
+}
+inputs
+{
+0 	Frames 0 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclipextract1.chn"
+Content-Type: text/plain
+
+{
+    channel framerange1 {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FSTART }
+    }
+    channel framerange2 {
+      lefttype = extend
+      righttype = extend
+      default = 240
+      flags = 0
+      segment { length = 0 value = 240 240 expr = npoints(0) }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclipextract1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+mode	[ 0	locks=0 ]	(	"frames"	)
+jointnames	[ 0	locks=0 ]	(	""	)
+unpackexisting	[ 0	locks=0 ]	(	"off"	)
+framerange	[ 8	locks=0 ]	(	[ framerange1	1 ] 	[ framerange2	439 ] 	1	)
+useendbehavior	[ 0	locks=0 ]	(	"on"	)
+endbehavior	[ 0	locks=0 ]	(	"clamp"	)
+useattribs	[ 0	locks=0 ]	(	"on"	)
+attribs	[ 0	locks=0 ]	(	*	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclipextract1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":""
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/attribwrangle1.init"
+Content-Type: text/plain
+
+type = attribwrangle
+matchesdef = 1
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/attribwrangle1.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position 1.06689 -0.0487006
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+1 "output1"
+}
+inputsNamed3
+{
+0 	motionclipextract1 1 1 "input1"
+}
+inputs
+{
+0 	motionclipextract1 0 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/attribwrangle1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+folder0	[ 0	locks=0 ]	(	0	0	)
+group	[ 0	locks=0 ]	(	""	)
+grouptype	[ 0	locks=0 ]	(	"guess"	)
+class	[ 0	locks=0 ]	(	"point"	)
+vex_numcount	[ 0	locks=0 ]	(	10	)
+vex_threadjobsize	[ 0	locks=0 ]	(	1024	)
+snippet	[ 0	locks=0 ]	(	"i@frame = f@time * $FPS + 1;"	)
+exportlist	[ 0	locks=0 ]	(	*	)
+vex_strict	[ 0	locks=0 ]	(	"off"	)
+autobind	[ 0	locks=0 ]	(	"on"	)
+bindings	[ 0	locks=0 ]	(	0	)
+groupautobind	[ 0	locks=0 ]	(	"on"	)
+groupbindings	[ 0	locks=0 ]	(	0	)
+vex_cwdpath	[ 0	locks=0 ]	(	.	)
+vex_outputmask	[ 0	locks=0 ]	(	*	)
+vex_updatenmls	[ 0	locks=0 ]	(	"off"	)
+vex_matchattrib	[ 0	locks=0 ]	(	id	)
+vex_inplace	[ 0	locks=0 ]	(	"off"	)
+vex_selectiongroup	[ 0	locks=0 ]	(	""	)
+vex_precision	[ 0	locks=0 ]	(	auto	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/attribwrangle1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":""
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/TPose.init"
+Content-Type: text/plain
+
+type = kinefx::fbxcharacterimport
+matchesdef = 1
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/TPose.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position 4.60927 5.71017
+connectornextid 3
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+0 "output1"
+1 "output2"
+2 "output3"
+}
+inputsNamed3
+{
+}
+inputs
+{
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/TPose.chn"
+Content-Type: text/plain
+
+{
+    channel time {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $T }
+    }
+    channel animationstarttime {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $TSTART }
+    }
+    channel animationendtime {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $TEND }
+    }
+    channel playbackstarttime {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $TSTART }
+    }
+    channel frame {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FF }
+    }
+    channel animationstartframe {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FSTART }
+    }
+    channel animationendframe {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FEND }
+    }
+    channel playbackstartframe {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FSTART }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/TPose.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+folder1	[ 0	locks=0 ]	(	0	0	)
+fbxfile	[ 0	locks=0 ]	(	$HIP/Animation/TPose.fbx	)
+animfbxfile	[ 0	locks=0 ]	(	""	)
+clipname	[ 0	locks=0 ]	(	""	)
+setnewclipname	[ 0	locks=0 ]	(	"off"	)
+newclipname	[ 0	locks=0 ]	(	""	)
+rigcolor	[ 0	locks=0 ]	(	0	1	0	)
+convertunits	[ 0	locks=0 ]	(	"on"	)
+importinvisibleshapes	[ 0	locks=0 ]	(	"off"	)
+reload	[ 0	locks=0 ]	(	0	)
+timeshiftmethod	[ 0	locks=0 ]	(	"bytime"	)
+time	[ 0	locks=0 ]	(	[ time	0 ] 	)
+useanimationstarttime	[ 0	locks=0 ]	(	"off"	)
+animationstarttime	[ 0	locks=0 ]	(	[ animationstarttime	0 ] 	)
+useanimationendtime	[ 0	locks=0 ]	(	"off"	)
+animationendtime	[ 0	locks=0 ]	(	[ animationendtime	9.9583333333333339 ] 	)
+useplaybackstarttime	[ 0	locks=0 ]	(	"off"	)
+playbackstarttime	[ 0	locks=0 ]	(	[ playbackstarttime	0 ] 	)
+frame	[ 0	locks=0 ]	(	[ frame	0 ] 	)
+useanimationstartframe	[ 0	locks=0 ]	(	"off"	)
+animationstartframe	[ 0	locks=0 ]	(	[ animationstartframe	1 ] 	)
+useanimationendframe	[ 0	locks=0 ]	(	"off"	)
+animationendframe	[ 0	locks=0 ]	(	[ animationendframe	240 ] 	)
+useplaybackstartframe	[ 0	locks=0 ]	(	"off"	)
+playbackstartframe	[ 0	locks=0 ]	(	[ playbackstartframe	1 ] 	)
+speed	[ 0	locks=0 ]	(	1	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/TPose.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":""
+	},
+	"display_options":{
+		"type":"string",
+		"value":"{\"solid_links\": true, \"show_links\": 1, \"show_joints\": 0, \"joint_scale\": 1.0, \"show_joint_data\": false, \"show_axes\": false, \"show_scene_geo\": true}"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RemoveHandAndToe.init"
+Content-Type: text/plain
+
+type = attribwrangle
+matchesdef = 1
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RemoveHandAndToe.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment 清理手指骨骼
+position 4.70912 4.65367
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on displaycomment on
+outputsNamed3
+{
+1 "output1"
+}
+inputsNamed3
+{
+0 	TPose 2 1 "input1"
+}
+inputs
+{
+0 	TPose 2 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RemoveHandAndToe.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+folder0	[ 0	locks=0 ]	(	0	0	)
+group	[ 0	locks=0 ]	(	""	)
+grouptype	[ 0	locks=0 ]	(	"guess"	)
+class	[ 0	locks=0 ]	(	"point"	)
+vex_numcount	[ 0	locks=0 ]	(	10	)
+vex_threadjobsize	[ 0	locks=0 ]	(	1024	)
+snippet	[ 0	locks=0 ]	(	"string to_remove[] = {\"*LeftHand*\", \"*RightHand*\", \"*Head*\",\"*ToeBase*\"};
+int len_name = len(s@name);
+foreach(string pattern; to_remove)
+{
+    if(match(pattern, s@path[0:-len_name]))
+    {
+        removepoint(0, @ptnum);
+    }
+}
+if(match(\"*Beta*\", s@path))
+{
+    removepoint(0, @ptnum);
+}"	)
+exportlist	[ 0	locks=0 ]	(	*	)
+vex_strict	[ 0	locks=0 ]	(	"off"	)
+autobind	[ 0	locks=0 ]	(	"on"	)
+bindings	[ 0	locks=0 ]	(	0	)
+groupautobind	[ 0	locks=0 ]	(	"on"	)
+groupbindings	[ 0	locks=0 ]	(	0	)
+vex_cwdpath	[ 0	locks=0 ]	(	.	)
+vex_outputmask	[ 0	locks=0 ]	(	*	)
+vex_updatenmls	[ 0	locks=0 ]	(	"off"	)
+vex_matchattrib	[ 0	locks=0 ]	(	id	)
+vex_inplace	[ 0	locks=0 ]	(	"off"	)
+vex_selectiongroup	[ 0	locks=0 ]	(	""	)
+vex_precision	[ 0	locks=0 ]	(	auto	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RemoveHandAndToe.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":""
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RemoveHandAndToe1.init"
+Content-Type: text/plain
+
+type = attribwrangle
+matchesdef = 1
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RemoveHandAndToe1.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment "清理手指骨骼
+Referenced from RemoveHandAndToe"
+position 1.17162 4.46326
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on displaycomment on
+outputsNamed3
+{
+1 "output1"
+}
+inputsNamed3
+{
+0 	AnimationImport 0 1 "input1"
+}
+inputs
+{
+0 	AnimationImport 0 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RemoveHandAndToe1.chn"
+Content-Type: text/plain
+
+{
+    channel vex_precision {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"auto\"
+      flags = 0
+      segment { length = 0 expr = chs(\"../RemoveHandAndToe/vex_precision\") }
+    }
+    channel vex_selectiongroup {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"\"
+      flags = 0
+      segment { length = 0 expr = chs(\"../RemoveHandAndToe/vex_selectiongroup\") }
+    }
+    channel vex_inplace {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = ch(\"../RemoveHandAndToe/vex_inplace\") }
+    }
+    channel vex_matchattrib {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"id\"
+      flags = 0
+      segment { length = 0 expr = chs(\"../RemoveHandAndToe/vex_matchattrib\") }
+    }
+    channel vex_updatenmls {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = ch(\"../RemoveHandAndToe/vex_updatenmls\") }
+    }
+    channel vex_outputmask {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"*\"
+      flags = 0
+      segment { length = 0 expr = chs(\"../RemoveHandAndToe/vex_outputmask\") }
+    }
+    channel vex_cwdpath {
+      lefttype = extend
+      righttype = extend
+      defaultString = \".\"
+      flags = 0
+      segment { length = 0 expr = chsop(\"../RemoveHandAndToe/vex_cwdpath\") }
+    }
+    channel groupautobind {
+      lefttype = extend
+      righttype = extend
+      default = 1
+      flags = 0
+      segment { length = 0 value = 1 1 expr = ch(\"../RemoveHandAndToe/groupautobind\") }
+    }
+    channel autobind {
+      lefttype = extend
+      righttype = extend
+      default = 1
+      flags = 0
+      segment { length = 0 value = 1 1 expr = ch(\"../RemoveHandAndToe/autobind\") }
+    }
+    channel vex_strict {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = ch(\"../RemoveHandAndToe/vex_strict\") }
+    }
+    channel exportlist {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"*\"
+      flags = 0
+      segment { length = 0 expr = chs(\"../RemoveHandAndToe/exportlist\") }
+    }
+    channel snippet {
+      lefttype = extend
+      righttype = extend
+      defaultString = "\"string to_remove[] = {\\\"*LeftHand*\\\", \\\"*RightHand*\\\", \\\"*Head*\\\",\\\"*ToeBase*\\\"};
+int len_name = len(s@name);
+foreach(string pattern; to_remove)
+{
+    if(match(pattern, s@path[0:-len_name]))
+    {
+        removepoint(0, @ptnum);
+    }
+}
+if(match(\\\"*Beta*\\\", s@path))
+{
+    removepoint(0, @ptnum);
+}\""
+      flags = 0
+      segment { length = 0 expr = chs(\"../RemoveHandAndToe/snippet\") }
+    }
+    channel vex_threadjobsize {
+      lefttype = extend
+      righttype = extend
+      default = 1024
+      flags = 0
+      segment { length = 0 value = 1024 1024 expr = ch(\"../RemoveHandAndToe/vex_threadjobsize\") }
+    }
+    channel vex_numcount {
+      lefttype = extend
+      righttype = extend
+      default = 10
+      flags = 0
+      segment { length = 0 value = 10 10 expr = ch(\"../RemoveHandAndToe/vex_numcount\") }
+    }
+    channel class {
+      lefttype = extend
+      righttype = extend
+      default = 2
+      flags = 0
+      segment { length = 0 value = 2 2 expr = ch(\"../RemoveHandAndToe/class\") }
+    }
+    channel grouptype {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = ch(\"../RemoveHandAndToe/grouptype\") }
+    }
+    channel group {
+      lefttype = extend
+      righttype = extend
+      defaultString = \"\"
+      flags = 0
+      segment { length = 0 expr = chs(\"../RemoveHandAndToe/group\") }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RemoveHandAndToe1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+folder0	[ 0	locks=0 ]	(	0	0	)
+group	[ 0	locks=0 ]	(	[ group	"" ] 	)
+grouptype	[ 0	locks=0 ]	(	[ grouptype	0 ] 	)
+class	[ 0	locks=0 ]	(	[ class	2 ] 	)
+vex_numcount	[ 0	locks=0 ]	(	[ vex_numcount	10 ] 	)
+vex_threadjobsize	[ 0	locks=0 ]	(	[ vex_threadjobsize	1024 ] 	)
+snippet	[ 0	locks=0 ]	(	[ snippet	"string to_remove[] = {\"*LeftHand*\", \"*RightHand*\", \"*Head*\",\"*ToeBase*\"};
+int len_name = len(s@name);
+foreach(string pattern; to_remove)
+{
+    if(match(pattern, s@path[0:-len_name]))
+    {
+        removepoint(0, @ptnum);
+    }
+}
+if(match(\"*Beta*\", s@path))
+{
+    removepoint(0, @ptnum);
+}" ] 	)
+exportlist	[ 0	locks=0 ]	(	[ exportlist	* ] 	)
+vex_strict	[ 0	locks=0 ]	(	[ vex_strict	0 ] 	)
+autobind	[ 0	locks=0 ]	(	[ autobind	1 ] 	)
+bindings	[ 0	locks=0 ]	(	0	)
+groupautobind	[ 0	locks=0 ]	(	[ groupautobind	1 ] 	)
+groupbindings	[ 0	locks=0 ]	(	0	)
+vex_cwdpath	[ 0	locks=0 ]	(	[ vex_cwdpath	/obj/DanceNode/Hips/RemoveHandAndToe ] 	)
+vex_outputmask	[ 0	locks=0 ]	(	[ vex_outputmask	* ] 	)
+vex_updatenmls	[ 0	locks=0 ]	(	[ vex_updatenmls	0 ] 	)
+vex_matchattrib	[ 0	locks=0 ]	(	[ vex_matchattrib	id ] 	)
+vex_inplace	[ 0	locks=0 ]	(	[ vex_inplace	0 ] 	)
+vex_selectiongroup	[ 0	locks=0 ]	(	[ vex_selectiongroup	"" ] 	)
+vex_precision	[ 0	locks=0 ]	(	[ vex_precision	auto ] 	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/RemoveHandAndToe1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":""
+	},
+	"referenced_from":{
+		"type":"string",
+		"value":"../RemoveHandAndToe"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/AnimationImport.init"
+Content-Type: text/plain
+
+type = kinefx::fbxanimimport
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/AnimationImport.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position 1.17462 5.71017
+connectornextid 1
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+0 "output1"
+}
+inputsNamed3
+{
+}
+inputs
+{
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/AnimationImport.chn"
+Content-Type: text/plain
+
+{
+    channel time {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $T }
+    }
+    channel animationstarttime {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $TSTART }
+    }
+    channel animationendtime {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $TEND }
+    }
+    channel playbackstarttime {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $TSTART }
+    }
+    channel frame {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FF }
+    }
+    channel animationstartframe {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FSTART }
+    }
+    channel animationendframe {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FEND }
+    }
+    channel playbackstartframe {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FSTART }
+    }
+    channel fbxfile {
+      lefttype = extend
+      righttype = extend
+      defaultString = "\"$HIP/Animation/Rumba Dancing.fbx\""
+      flags = 0
+      segment { length = 0 expr = chs(\"../AnimationFBX\") }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/AnimationImport.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+importfolder	[ 0	locks=0 ]	(	0	0	)
+fbxfile	[ 0	locks=0 ]	(	[ fbxfile	"J:/Houdini/DanceNode/Animation/Samba Dancing.fbx" ] 	)
+clipname	[ 0	locks=0 ]	(	""	)
+setnewclipname	[ 0	locks=0 ]	(	"off"	)
+newclipname	[ 0	locks=0 ]	(	""	)
+rootnode	[ 0	locks=0 ]	(	""	)
+color	[ 0	locks=0 ]	(	0	0.089999999999999997	1	)
+convertunits	[ 0	locks=0 ]	(	"on"	)
+output	[ 0	locks=0 ]	(	"animation"	)
+reload	[ 0	locks=0 ]	(	0	)
+timeshiftmethod	[ 0	locks=0 ]	(	"bytime"	)
+time	[ 0	locks=0 ]	(	[ time	0 ] 	)
+useanimationstarttime	[ 0	locks=0 ]	(	"off"	)
+animationstarttime	[ 0	locks=0 ]	(	[ animationstarttime	0 ] 	)
+useanimationendtime	[ 0	locks=0 ]	(	"off"	)
+animationendtime	[ 0	locks=0 ]	(	[ animationendtime	9.9583333333333339 ] 	)
+useplaybackstarttime	[ 0	locks=0 ]	(	"off"	)
+playbackstarttime	[ 0	locks=0 ]	(	[ playbackstarttime	0 ] 	)
+frame	[ 0	locks=0 ]	(	[ frame	0 ] 	)
+useanimationstartframe	[ 0	locks=0 ]	(	"off"	)
+animationstartframe	[ 0	locks=0 ]	(	[ animationstartframe	1 ] 	)
+useanimationendframe	[ 0	locks=0 ]	(	"off"	)
+animationendframe	[ 0	locks=0 ]	(	[ animationendframe	240 ] 	)
+useplaybackstartframe	[ 0	locks=0 ]	(	"off"	)
+playbackstartframe	[ 0	locks=0 ]	(	[ playbackstartframe	1 ] 	)
+speed	[ 0	locks=0 ]	(	1	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/AnimationImport.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"___EXTERNAL___"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclip1.init"
+Content-Type: text/plain
+
+type = kinefx::motionclip
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclip1.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position 0.952564 3.1866
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+1 "output1"
+}
+inputsNamed3
+{
+0 	RemoveHandAndToe1 1 1 "input1"
+}
+inputs
+{
+0 	RemoveHandAndToe1 0 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclip1.chn"
+Content-Type: text/plain
+
+{
+    channel restframe {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FSTART }
+    }
+    channel samplerate {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FPS }
+    }
+    channel framerange1 {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FSTART }
+    }
+    channel framerange2 {
+      lefttype = extend
+      righttype = extend
+      flags = 0
+      segment { length = 0 expr = $FEND }
+    }
+  }
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclip1.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+packinputs	[ 0	locks=0 ]	(	"off"	)
+restframe	[ 0	locks=0 ]	(	[ restframe	1 ] 	)
+usesamplerate	[ 0	locks=0 ]	(	"off"	)
+samplerate	[ 0	locks=0 ]	(	[ samplerate	24 ] 	)
+useframerange	[ 0	locks=0 ]	(	"off"	)
+framerange	[ 0	locks=0 ]	(	[ framerange1	1 ] 	[ framerange2	240 ] 	)
+useleftendbehavior	[ 0	locks=0 ]	(	"off"	)
+leftendbehavior	[ 0	locks=0 ]	(	"clamp"	)
+userightendbehavior	[ 0	locks=0 ]	(	"off"	)
+rightendbehavior	[ 0	locks=0 ]	(	"clamp"	)
+reloadmethod	[ 0	locks=0 ]	(	"auto"	)
+attribs	[ 0	locks=0 ]	(	*	)
+reload	[ 0	locks=0 ]	(	0	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/motionclip1.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"___EXTERNAL___"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/OutSkeleton.init"
+Content-Type: text/plain
+
+type = null
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/OutSkeleton.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position 4.60927 3.1816
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+1 "output1"
+}
+inputsNamed3
+{
+0 	RemoveHandAndToe 1 1 "input1"
+}
+inputs
+{
+0 	RemoveHandAndToe 0 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.6 0.7 0.77 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/OutSkeleton.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+copyinput	[ 0	locks=0 ]	(	"on"	)
+cacheinput	[ 0	locks=0 ]	(	"off"	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/OutSkeleton.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"___EXTERNAL___"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Frames.init"
+Content-Type: text/plain
+
+type = null
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Frames.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position 0.952564 2.0839
+connectornextid 2
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+1 "output1"
+}
+inputsNamed3
+{
+0 	motionclip1 1 1 "input1"
+}
+inputs
+{
+0 	motionclip1 0 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.6 0.7 0.77 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Frames.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+copyinput	[ 0	locks=0 ]	(	"on"	)
+cacheinput	[ 0	locks=0 ]	(	"off"	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/Frames.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"___EXTERNAL___"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/out.init"
+Content-Type: text/plain
+
+type = output
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/out.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position 4.60927 1.20037
+connectornextid 1
+flags =  lock off model off template off footprint off xray off bypass off display on render on highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+}
+inputsNamed3
+{
+0 	OutSkeleton 1 1 "input1"
+}
+inputs
+{
+0 	OutSkeleton 0 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.8 0.8 0.8 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/out.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+outputidx	[ 0	locks=0 ]	(	0	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/out.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"___EXTERNAL___"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/OutAnimation.init"
+Content-Type: text/plain
+
+type = null
+matchesdef = 0
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/OutAnimation.def"
+Content-Type: text/plain
+
+sopflags sopflags = 
+comment ""
+position 0.842507 -1.22661
+connectornextid 1
+flags =  lock off model off template off footprint off xray off bypass off display off render off highlight off unload off savedata off compress on colordefault on exposed on
+outputsNamed3
+{
+}
+inputsNamed3
+{
+0 	attribwrangle1 1 1 "input1"
+}
+inputs
+{
+0 	attribwrangle1 0 1
+}
+stat
+{
+  create -1
+  modify -1
+  author Administrator@PaulHome
+  access 0777
+}
+color UT_Color RGB 0.6 0.7 0.77 
+delscript ""
+exprlanguage hscript
+end
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/OutAnimation.parm"
+Content-Type: text/plain
+
+{
+version 0.8
+copyinput	[ 0	locks=0 ]	(	"on"	)
+cacheinput	[ 0	locks=0 ]	(	"off"	)
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot/OutAnimation.userdata"
+Content-Type: text/plain
+
+{
+	"___Version___":{
+		"type":"string",
+		"value":"___EXTERNAL___"
+	}
+}
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.order"
+Content-Type: text/plain
+
+11
+motionclipextract1
+AnimationImport
+motionclip1
+OutSkeleton
+attribwrangle1
+Frames
+out
+OutAnimation
+TPose
+RemoveHandAndToe
+RemoveHandAndToe1
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY
+Content-Disposition: attachment; filename="hdaroot.net"
+Content-Type: text/plain
+
+1
+
+--HOUDINIMIMEBOUNDARY0xD3ADD339-0x00000F49-0x56B122C9-0x00000001HOUDINIMIMEBOUNDARY--

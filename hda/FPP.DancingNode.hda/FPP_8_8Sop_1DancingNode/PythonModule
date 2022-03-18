@@ -1,0 +1,100 @@
+import hou
+
+
+class DanceBoy():
+    def __init__(self):
+        self.node = None
+        self.angle = 0
+        self.turn_step = 30
+        self.total_frame = 0
+        self.current_frame = 1
+    
+    def init_skeleton(self, kwargs):
+        """构建节点骨骼"""
+        self.node = kwargs['node']
+        self.node.setName('Hips')
+        context_node = self.node.parent()
+        skeleton_geo = self.node.node('OutSkeleton').geometry()
+        
+        # 每个骨骼点创建一个节点
+        for point in skeleton_geo.points():
+            bone_name = self.get_bone_name(point.stringAttribValue('name'))
+            pos = self.convert_pos(point.position())
+            
+            # Hips根节点
+            if bone_name == self.node.name():
+                self.node.setPosition(pos)
+                continue
+            
+            if not context_node.node(bone_name):  # 跳过已存在节点
+                bone_node = context_node.createNode('merge', bone_name)
+            else:
+                bone_node = context_node.node(bone_name)
+            bone_node.setPosition(pos)
+        
+        # 根据节点路径计算连接关系
+        for point in skeleton_geo.points():
+            bone_name = self.get_bone_name(point.stringAttribValue('name'))
+            if bone_name == self.node.name():   continue  # Hips根节点跳过
+            
+            path = point.stringAttribValue('path')
+            parent_node = context_node.node(path.split('/')[-2].split(':')[-1])
+            
+            bone_node = context_node.node(bone_name)
+            pos = bone_node.position()
+            if pos.y() <= self.node.position().y():  # 下半身节点为父节点的输出端
+                bone_node.setInput(0, parent_node, 0)
+            else:  # 上半身节点为父节点的输入端
+                if bone_node in parent_node.inputs():   continue
+                input_index = len(parent_node.inputs())
+                parent_node.setInput(input_index, bone_node, 0)
+    
+    def get_bone_name(self, source_name):
+        """Mixamo骨骼名称转换"""
+        return source_name.split(':')[-1]
+    
+    def convert_pos(self, world_pos):
+        """骨骼的世界坐标转换到屏幕坐标"""
+        rotate_matrix = hou.hmath.buildRotateAboutAxis((0, 1, 0), self.angle)
+        scale = self.node.parm('Scale').evalAsFloat()
+        scale_matrix = hou.hmath.buildScale(scale, scale, scale)
+        world_pos = world_pos * scale_matrix * rotate_matrix
+        return hou.Vector2(world_pos.x(), world_pos.y())
+    
+    def on_turn(self, kwargs, direction):
+        """左右旋转角色"""
+        self.angle += self.turn_step * direction
+        self.init_skeleton(kwargs)
+    
+    def on_reset_turn(self, kwargs):
+        """重置角度，恢复原始pose"""
+        self.angle = 0
+        self.init_skeleton(kwargs)
+    
+    def on_stop(self, kwargs):
+        """停止跳舞"""
+        for c in hou.ui.eventLoopCallbacks():
+            hou.ui.removeEventLoopCallback(c)
+        self.on_reset_turn(kwargs)
+    
+    def on_dance(self, kwargs):
+        """开始跳舞"""
+        self.node = kwargs['node']
+        self.total_frame = len(self.node.node('Frames').geometry().iterPoints())
+        for c in hou.ui.eventLoopCallbacks():
+            hou.ui.removeEventLoopCallback(c)
+        hou.ui.addEventLoopCallback(self.tick)
+    
+    def tick(self):
+        """提取每帧的动画数据"""
+        context_node = self.node.parent()
+        anim_geo = self.node.node('OutAnimation').geometry()
+        for point in anim_geo.globPoints('@frame=%d' % self.current_frame):
+            bone_name = self.get_bone_name(point.stringAttribValue('name'))
+            pos = self.convert_pos(point.position())
+            context_node.node(bone_name).setPosition(pos)
+        self.current_frame += 1
+        if self.current_frame >= self.total_frame: self.current_frame = 1
+
+
+boy = DanceBoy()

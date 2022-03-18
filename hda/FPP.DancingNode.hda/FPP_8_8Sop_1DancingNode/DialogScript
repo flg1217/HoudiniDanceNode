@@ -1,0 +1,96 @@
+# Dialog script for FPP::DancingNode automatically generated
+
+{
+    name	FPP::DancingNode
+    script	FPP::DancingNode
+    label	Dancingnode
+
+    help {
+	""
+    }
+
+    inputlabel	1	"Sub-Network Input #1"
+    inputlabel	2	"Sub-Network Input #2"
+    inputlabel	3	"Sub-Network Input #3"
+    inputlabel	4	"Sub-Network Input #4"
+
+    parm {
+        name    "InitSkeleton"
+        label   "构建骨骼"
+        type    button
+        joinnext
+        default { "0" }
+        parmtag { "script_callback" "hou.phm().boy.init_skeleton(kwargs)" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "Dance"
+        label   "跳舞！"
+        type    button
+        joinnext
+        default { "0" }
+        parmtag { "script_callback" "hou.phm().boy.on_dance(kwargs)" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "Stop"
+        label   "停下休息"
+        type    button
+        default { "0" }
+        parmtag { "script_callback" "hou.phm().boy.on_stop(kwargs)" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "TurnLeft"
+        label   "<-"
+        type    button
+        joinnext
+        default { "0" }
+        parmtag { "script_callback" "hou.phm().boy.on_turn(kwargs, -1)" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "TurnRight"
+        label   "->"
+        type    button
+        joinnext
+        default { "0" }
+        parmtag { "script_callback" "hou.phm().boy.on_turn(kwargs, 1)" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "ResetTurn"
+        label   "重置角度"
+        type    button
+        joinnext
+        default { "0" }
+        parmtag { "script_callback" "hou.phm().boy.on_reset_turn(kwargs)" }
+        parmtag { "script_callback_language" "python" }
+    }
+    parm {
+        name    "Scale"
+        label   "缩放"
+        type    float
+        default { "10" }
+        range   { 0 10 }
+        parmtag { "script_callback_language" "python" }
+    }
+    groupsimple {
+        name    "folder0"
+        label   "动画"
+
+        parm {
+            name    "AnimationFBX"
+            label   "动画FBX"
+            type    file
+            default { "$HIP/Animation/Samba Dancing.fbx" }
+            menureplace {
+                [ "opmenu -l -a fbxanimimport1 fbxfile" ]
+            }
+            parmtag { "autoscope" "0000000000000000" }
+            parmtag { "filechooser_mode" "read" }
+            parmtag { "filechooser_pattern" "*.fbx" }
+        }
+    }
+
+}
